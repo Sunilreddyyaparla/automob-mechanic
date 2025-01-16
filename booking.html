@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            preventive-maintenance-service
+        </title>
+        <script src="https://kit.fontawesome.com/ee7697691c.js" crossorigin="anonymous"></script>
+        <style>
+             @font-face {
+                font-family: montserrat;
+                src: url(Montserrat.ttf);
+            }
+            html{
+                font-family: montserrat;
+            }
+            .uti{
+                text-indent: 3pc;
+            }
+            nav{
+                border: 1px solid rgb(30, 85, 148) ;
+                background-color:rgb(30, 85, 148) ;
+                padding: 10px;
+                margin: 0px; 
+            }
+            div{
+                display: inline-block;
+            }
+            div a{
+                color: white;
+                text-decoration: none;
+                border: 1px solid rgb(30, 85, 148) ;
+                padding: 10px;
+            }
+           div a:hover{
+                background-color: orangered;
+            }
+            footer{
+                border: 1px solid rgb(28, 70, 147);
+                background-color:rgb(30, 85, 148) ;
+                padding: 5px;
+                text-align: center;
+                color: white;
+                 margin-top: 30px;
+            }
+            h1{
+                text-align: center;
+            }
+            form{
+                border: 1px solid none;
+                
+                height: fit-content;
+                padding: 20px;
+                margin-left: 30px;
+            }
+            .size{
+                width: 380px;
+                height: 30px;
+            }
+            
+            #button{
+                border: 1px solid none;
+                height: fit-content;
+                width:auto;
+                padding: 10px;
+                text-align: center;
+                margin-top: 50px;
+            }
+            p>button{
+                text-decoration: none;
+                border: 1px solid;
+                color: white;
+                background-color: palevioletred;
+                border-radius: 3px;
+                padding: 12px 30px;
+
+
+            }
+        </style>
+    </head>
+    <body >
+        <header>
+        <nav>
+            <div><a href="home.html"><i class="fas fa-car" style="color: white;"></i>  AutoMob-Mechanic</a></div>
+            <div style="float: right;">
+            <span><a href="services.html">Services</a>&nbsp;&nbsp;</span>
+            <span><a href="booking.html">booking</a>&nbsp;&nbsp;</span>
+            <span><a href="mailto:sunilreddyyaparla@gmail.com?subject=hello %20">contact@automob.co.in  <i class="fas fa-envelope" style="color:white;"></i></a>&nbsp;&nbsp;</span>
+            <span><a href="tel:+91999 999 9999">999 999 9999 <i class="fas fa-phone" style="color: white;"></i></a></span>
+            </div>
+        </nav>
+        </header>
+        <h1><ins style="color: rgb(63, 140, 229);"><span style="color: black;">Book </span><span style="color: palevioletred;">Your </span><span style="color: black;">Service</span></ins></h1>
+        <section>
+            <figure style="float: right; margin-right: 250px; margin-top: 100px;">
+                <img src="booking.jpg" width="250px" height="450px" >  
+            </figure>
+        <form>
+            Name<br><br><input type="text" placeholder="John Daub"  pattern="[A-Za-z]" required class="size"><br><br>
+            Email Id<br><br>
+            <input type="email" placeholder="john@yahoo.com" required class="size"><br><br>
+            Phone Number<br><br>
+            <input list="code" required placeholder="code" style="width:50px; height:30px; " >
+            <datalist id="code">
+            <option value="+91">+91</option>
+            <option value="+61">+61</option>
+            <option value="+213">+213</option>
+            <option value="+244">+244</option>
+            </datalist>
+            <input type="tel" minlength="10" maxlength="10" required style="width:310px ; height: 30px;"><br><br>
+            Select service<br><br>
+            <input list="service" required placeholder="--select--" class="size">
+            <datalist id="service">
+            <option value="Preventive Maintainance service">
+            <option value="Body repair service">
+            <option value="car care service">
+            </datalist><br><br>
+            car make<br><br>
+            <input list="cars" required placeholder="Suzuki,Toyota..." class="size">
+                    <datalist id="cars" >
+                    <option value="Honda">
+                    <option value="Toyota">
+                    <option value="Nissan">
+                    <option value="Hyundai">
+                    <option value="Mahindra">
+                    <option value="Ford">
+                    <option value="Range Rover">
+                    </datalist><br><br>
+            car model<br><br>
+            <input type="text" placeholder="Alto,Innova" required class="size"><br><br>
+            Fuel Type<br><br>
+                      <input type="radio" name="fuel type" value="Petrol" required>Petrol 
+                      <input type="radio" name="fuel type" value="Diesel">Diesel
+                      <input type="radio" name="fuel type" value="LPG">LPG
+                      <input type="radio" name="fuel type" value="others">others<br><br>
+                      
+            Kilometers Ran<br><br>
+            <input type="number" placeholder="...KM" required class="size"><br><br>
+            
+                <p id="button"><button type="submit " formaction="booking-success.html" formmethod="post">Schedule Your Appointment</button></p>
+            
+        </form>
+        </section>
+    </body>
+    <body>
+        
+        <footer>
+        <p>Copyright &copy; 2020 AutoMob-Mechanic.All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
